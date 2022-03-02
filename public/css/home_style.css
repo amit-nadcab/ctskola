@@ -1,0 +1,114 @@
+.banner {
+ /*  background-image: url("../img/back.jpg"); */
+ /*  background-size: cover;
+  background-position: center; */
+  min-height: 90vh;
+  background-color: #141A28;
+  /* background-image: url("../img/Pro-Max.png"); */
+}
+.trade_icons {
+  height: 50px;
+  width: 100px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mactive {
+  padding: 5px 15px !important;
+  border-radius: 5px !important;
+  margin: 10px 10px;
+}
+
+
+.nmactive{
+  padding: 5px 15px !important;
+  border-radius: 5px !important;
+  background-color: #f9fcff!important;
+  color:rgb(82, 120, 224) !important;
+  margin: 10px 10px;
+}
+.wrap-2{width:100%;background-color:#141A28}
+
+.bannertxt {
+  font-size: 48px;
+  white-space: nowrap;
+}
+.bannerImg{
+  height: 80vh !important;
+  padding-top:60px
+}
+.bannerBtn{
+  background-color: #09BE8B;
+  line-height: 30px;
+  padding:0 20px;
+  border-radius:5px
+}
+.bannerBtn:hover{
+  background-color: red;
+}
+
+@media (max-width: 600px) {
+  .gifimg {
+    width: 100%;
+  }
+  .bannertxt {
+    white-space: normal !important;
+    font-size: 35px;
+  }
+  
+ /* .banner {
+     background-size: contain;
+    background-position: top;
+    height: 300px;
+    background-repeat: no-repeat; 
+    
+  } */
+  .bannerLeft{
+    margin:50px 0 !important;
+  }
+  .bannerRight{position:relative;}
+  .bannerRight img{
+    height: 400px !important;
+  }
+  .mysocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.img-1{
+ background-color: #1e2738;
+ bottom: 130px;
+left: -14px;
+}
+.img-3{
+  background-color: #1e2738;
+  top: 157px;
+  right: -84px;
+ }
+ .img-2{
+  background-color: #1e2738;
+  top: 248px;
+  left: -60px;
+
+ }
+@media (max-width: 768px){
+  .bannerLeft{
+    margin-top:100px !important;
+  }
+  .bannerRight img{
+    height: 400px !important;
+    padding: 10px;
+  }
+
+}
+@media (max-width: 992px){
+  .bannerRight img{
+    height:500px !important
+  }
+
+}
