@@ -1,8 +1,13 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 
 export default function Banner(props) {
+  AOS.init({duration:1000})
   const { coins } = useSelector((state) => state.coinDBReducer);
   let coins1 = Object.values(coins);
 
@@ -28,7 +33,7 @@ export default function Banner(props) {
   })
   return (
     <>
-    <div className="wrap-2">
+    <div className="wrap-2 " >
       <div
         className="container text-dark p-0 m-0 mx-auto"
         style={{ background: "white" }}
@@ -54,15 +59,15 @@ export default function Banner(props) {
           </div>
           
               <div className="bannerRight col-12 col-md-6 d-flex justify-content-center align-items-center">
-                <img className="bannerImg" src="../img/Pro-Max.png" alt="" />
-                <div className = "img-1 position-absolute">
-                <img src="../img/mobile/Group-22.svg"  alt="" />
+                <img className="bannerImg " src="../img/Pro-Max.png" alt="" />
+                <div className = "img-1 position-absolute" data-aos="fade-right">
+                <img src="../img/mobile/Group-22.svg" className="img-fluid" alt="" />
                 </div>
-                <div className="img-2 position-absolute">
-                  <img src="../img/mobile/Group-23-1.svg" alt="" />
+                <div className="img-2 position-absolute" data-aos="fade-right">
+                  <img src="../img/mobile/Group-23-1.svg" className="img-fluid" alt="" />
                 </div>
-                <div className="img-3 position-absolute">
-                <img src="../img/mobile/Group-24.svg" alt="" />
+                <div className="img-3 position-absolute" data-aos="fade-left">
+                <img src="../img/mobile/Group-24.svg" className="img-fluid" alt="" />
                 </div>
                 
                 
@@ -75,7 +80,7 @@ export default function Banner(props) {
         className="container-fluid text-dark"
         style={{ background: "#141A28"}}
       >
-        <div className="row py-5 text-center d-flex justify-content-center">
+        <div className="row py-5 text-center d-flex justify-content-center"  data-aos="zoom-in-right">
           {banner_child}
         </div>
       </div>

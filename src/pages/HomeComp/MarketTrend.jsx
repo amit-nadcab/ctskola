@@ -2,9 +2,13 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { BsArrowUpShort } from 'react-icons/all'
 import { BsArrowDownShort } from 'react-icons/all'
-import {FcSalesPerformance} from 'react-icons/all'
-import Card from './Card'
+import {FcSalesPerformance,BiGitCompare,HiCubeTransparent} from 'react-icons/all'
+import Card from './Card';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default function MarketTrend() {
+  AOS.init()
   const { coins } = useSelector((state) => state.coinDBReducer);
   let coins1 = Object.values(coins);
   // console.log(coins1)
@@ -34,14 +38,14 @@ export default function MarketTrend() {
   })
   return (
     <>
-
-      <div className="container-fluid text-light" style={{ background: "#141A28" }}>
-        <h2 className="text-center pb-1">Market Trend</h2>
-        <div className="row px-5 d-flex justify-content-between">
+      <div className="wrap-4"  style={{background: "#141A28"}}>
+      <div className="container text-light py-5" /* style={{ background: "#141A28" }} */>
+        <h2 className="text-center py-4">Market Trend</h2>
+        <div className="row d-flex justify-content-between" data-aos="fade-up">
           <div className="col-lg-12 col-md-12 col-sm-12 table-responsive">
             <table
               className=" text-light table-sm"
-              style={{ width: "80%", margin: 'auto', borderRadius: "20px", background: "#1E2738" }}
+              style={{ width: "100%", margin: 'auto', borderRadius: "20px", background: "#1E2738" }}
             >
               <tbody>
                 <tr
@@ -63,25 +67,26 @@ export default function MarketTrend() {
           </div>
         </div>
       </div>
+      </div>
      
             <div className="container-fluid py-5" style={{ background: "#141A28" }}>
             <div className="container mx-auto">
-              <h1 className="text-center py-5">CTSKOLA KEY FEATURES</h1>
-              <div className="row">
-                <div className="col-md-4 col-12">
+              <h2 className="text-center py-4">Ctskola Key Features</h2>
+              <div className="row d-flex align-center justify-content-center">
+                <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center" data-aos="zoom-in-up">
                 <Card title="Real-Time Price"
             content="Find the crypto data you need  whether you’re looking to trade on a new to the exchange, invest in a fresh currency."
-              comp= {<FcSalesPerformance style={{fontSize: "3rem"}} className="m-3"/>}/>
+              comp= {<FcSalesPerformance style={{fontSize: "3rem",color:"#CB9615"}} className="m-3"/>}/>
                 </div>
-                <div className="col-md-4 col-12">
+                <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center" data-aos="zoom-in-up">
                 <Card title="Comparisons"
             content="Find the crypto data you need  whether you’re looking to trade on a new to the exchange, invest in a fresh currency."
-            comp= {<FcSalesPerformance style={{fontSize: "3rem"}} className="m-3"/>}/>
+            comp= {<BiGitCompare style={{fontSize: "3rem",color:"#CB9615"}} className="m-3"/>}/>
                 </div>
-                <div className="col-md-4 col-12">
+                <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center" data-aos="zoom-in-up">
                 <Card title="Transparent"
             content="Find the crypto data you need  whether you’re looking to trade on a new to the exchange, invest in a fresh currency."
-            comp= {<FcSalesPerformance style={{fontSize: "3rem"}} className="m-3"/>}/> 
+            comp= {<HiCubeTransparent style={{fontSize: "3rem",color:"#CB9615"}} className="m-3"/>}/> 
                 </div>
               </div>
             </div>
