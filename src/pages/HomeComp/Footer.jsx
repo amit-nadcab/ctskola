@@ -13,9 +13,8 @@ export default function Footer() {
         <div className="container mx-auto">
         <div className="row my-5 mx-5 ">
           <div className="col-lg-3 col-md-6 col-sm-12 mb-1 text-center" data-aos="flip-left">
-            <div className="footer-logo  ">
-            <img src="../img/ctskola-0.png" alt="no image" style={{width: "100%"}}/>
-           {/*  <Link to="/" style={{fontSize:"24px",fontWeight:"600"}}>CTSKOLA</Link> */}
+            <div className="footer-logo">
+            <img src="../img/ctskola-0.png" alt="logo" style={{width: "100%"}}/>
             </div>
             <div className="d-flex justify-content-center">
               <ul className="d-flex">
@@ -27,7 +26,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <BsFacebook style={{ height: "30px", width:"30px", color:"#1873EB" }} />
+                <BsFacebook className="social-link" style={{ height: "30px", width:"30px", color:"#1873EB" }} />
               </a>
                 </li>
                 <li style={{ margin: "0px 12px"}}><a
@@ -37,7 +36,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <BsInstagram style={{ height: "30px", width:"30px", color:"#B41978" }} />
+                <BsInstagram className="social-link" style={{ height: "30px", width:"30px", color:"#B41978" }} />
               </a></li>
               <li style={{ margin: "0px 12px"}}>
               <a
@@ -47,7 +46,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <BsTelegram style={{ height: "30px", width:"30px",color:"#30A4DC" }} />
+                <BsTelegram className="social-link" style={{ height: "30px", width:"30px",color:"#30A4DC" }} />
               </a>
               </li>
               <li style={{ margin: "0px 12px"}}>
@@ -58,7 +57,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <AiFillTwitterCircle
+                <AiFillTwitterCircle className="social-link"
                   style={{ height: "33px", width:"33px", color:"#1C96E8" }}
                 />
               </a>
@@ -69,7 +68,7 @@ export default function Footer() {
           <div className="col-lg-3 col-md-6 col-sm-12 my-3 text-center">
             <h5 style={{color: "#CDCFD4",fontWeight:"600"}}>About Us</h5>
             <p>
-              <a className="" style={{ fontWeight: "400" , color: "#CDCFD4" }}>
+              <a style={{ fontWeight: "400" , color: "#CDCFD4" }}>
                 About
               </a>
             </p>

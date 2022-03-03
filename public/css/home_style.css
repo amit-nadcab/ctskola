@@ -69,6 +69,49 @@
   background-color: red;
 }
 
+.img-1 {
+  background-color: #1e2738;
+  width: 200px;
+  bottom: 130px;
+  left: -14px;
+}
+.img-2 {
+  background-color: #1e2738;
+  top: 248px;
+  left: -60px;
+  width: 200px;
+}
+.img-3 {
+  background-color: #1e2738;
+  width: 200px;
+  top: 183px;
+  right: -34px;
+}
+
+.tradingBtn {
+  background-color: #04da9a;
+  padding: 12px 40px;
+  color: white;
+  border-radius: 3px;
+  font-weight: 600;
+}
+.tradingBtn:hover {
+  background-color: red;
+  color: #fff;
+}
+.footer-logo {
+  background-color: #09be8b;
+  padding: 15px 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.footer-logo:hover{
+  opacity:0.9;
+}
+.social-link:hover{
+  opacity: 0.7;
+}
 @media (max-width: 600px) {
   .gifimg {
     width: 100%;
@@ -100,46 +143,24 @@
     justify-content: center;
     align-items: center;
   }
-}
-.img-1 {
-  background-color: #1e2738;
-  width: 200px;
-  bottom: 130px;
-  left: -14px;
-}
-.img-2 {
-  background-color: #1e2738;
-  top: 248px;
-  left: -60px;
-  width: 200px;
-}
-.img-3 {
-  background-color: #1e2738;
-  width: 200px;
-  /* top: 157px;
-   right: -84px; */
-  top: 183px;
-  right: -34px;
+  .img-1 {
+    left: 13px !important;
+    top:-25px;
+    width: 100px !important;
+  }
+  .img-2 {
+    left: 50px !important;
+    width: 150px !important;
+  }
+  .img-3 {
+    
+    width: 150px !important;
+    right: 24px !important;
+   
+  }
 }
 
-.tradingBtn {
-  background-color: #04da9a;
-  padding: 12px 40px;
-  color: white;
-  border-radius: 3px;
-  font-weight: 600;
-}
-.tradingBtn:hover {
-  background-color: red;
-  color: #fff;
-}
-.footer-logo {
-  background-color: #09be8b;
-  padding: 15px 10px;
-  border-radius: 5px;
-  margin-top: 20px;
-  cursor: pointer;
-}
+
 
 @media (max-width: 768px) {
   .bannerLeft {
@@ -151,6 +172,27 @@
   }
   .card {
     margin-left: 0px !important;
+  }
+  .img-1 {
+    display: block !important;
+    width: 200px !important;
+    height:100px;
+    bottom: 300px;
+    left: -25px;
+  }
+  .img-2 {
+    display: block !important;
+    height:100px;
+    top: 300px;
+    left: -25px;
+    width: 200px;
+  }
+  .img-3 {
+    display: block !important;
+    width: 200px;
+    height:150px;
+    top: 100px;
+    right: -20px;
   }
 }
 @media (max-width: 992px) {
