@@ -11,7 +11,7 @@ export default function StartTrade() {
         <div className="row text-center py-5">
           <div className="col-12">
             <h4 style={{color: "#CDCFD4"}}>Start Trading now</h4>
-            <div className="my-4">
+            <div className="trading-container my-4">
               <Link data-aos="fade-right" className="tradingBtn mx-4" to="/login" >Register Now</Link>
               <Link
                 className="btn btn-light mx-4"
