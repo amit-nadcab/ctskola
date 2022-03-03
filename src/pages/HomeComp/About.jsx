@@ -4,6 +4,8 @@ import Footer from "./Footer";
 import Header from "./Header";
 import { FcSalesPerformance, BiGitCompare, HiCubeTransparent } from 'react-icons/all'
 import Card from './Card';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function About() {
  /*  useEffect(() => {
@@ -13,6 +15,8 @@ export default function About() {
       behavior: "smooth",
     });
   }); */
+  AOS.init({duration:"2000"})
+ 
   return (
     <>
       <Header />
@@ -23,10 +27,10 @@ export default function About() {
         <span className="d-flex justify-content-center mb-5"><a className="text-light" href="/">Home</a>/ <a className="text-light" href="/about">About</a></span>
           <div className="row">
            
-            <div className="col-md-12 col-lg-6 col-12 about-img">
+            <div className="col-md-12 col-lg-6 col-12 about-img" data-aos="fade-right">
               <img src="./img/pngwing.com-1.png" className="img-fluid" alt="" />
             </div>
-            <div className="col-md-12 col-lg-6 col-12">
+            <div className="col-md-12 col-lg-6 col-12" data-aos="fade-left">
               <h4 className="about-top">CTSKOLA</h4>
               <h2 className="about-head">Who Are We</h2>
               <p className="about-paraOne">
