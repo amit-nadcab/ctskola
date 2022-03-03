@@ -34,7 +34,7 @@ export default function About() {
               <h4 className="about-top">CTSKOLA</h4>
               <h2 className="about-head">Who Are We</h2>
               <p className="about-paraOne">
-                Ctskola has everything you need to buy, sell, and trade crypto.
+                CtsK  ola has everything you need to buy, sell, and trade crypto.
                 An intuitive experience from the start.
               </p >
               <p className="about-paraTwo">From day one, we designed and built a streamlined crypto exchange for newcomers and experts alike.</p>
