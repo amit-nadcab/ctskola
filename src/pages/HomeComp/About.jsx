@@ -6,24 +6,27 @@ import { FcSalesPerformance, BiGitCompare, HiCubeTransparent } from 'react-icons
 import Card from './Card';
 
 export default function About() {
-  useEffect(() => {
+ /*  useEffect(() => {
     window.scrollTo({
       top: 0,
       left: 0,
       behavior: "smooth",
     });
-  });
+  }); */
   return (
     <>
       <Header />
       {/* <Banner image={"about_us.png"} /> */}
       <div className="wrap-about">
-        <div className="container mx-auto">
+        <div className="container mx-auto mt-5 d-flex justify-content-center flex-column">
+        <h1 className="text-center display-3 mt-5">About</h1>  
+        <span className="d-flex justify-content-center mb-5"><a className="text-light" href="/">Home</a>/ <a className="text-light" href="/about">About</a></span>
           <div className="row">
-            <div className="col-md-6 about-img">
+           
+            <div className="col-md-12 col-lg-6 col-12 about-img">
               <img src="./img/pngwing.com-1.png" className="img-fluid" alt="" />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-12 col-lg-6 col-12">
               <h4 className="about-top">CTSKOLA</h4>
               <h2 className="about-head">Who Are We</h2>
               <p className="about-paraOne">
