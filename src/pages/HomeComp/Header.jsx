@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Header.css"
+//import "./Header.css"
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useSelector } from "react-redux";
@@ -82,9 +82,9 @@ export default function Header() {
         </div>
       </nav> */}
 
-      <header className="wrap-1">
-        <nav className="navbar navbar-expand-lg navbar-dark container" >
-        <Link className="navbar-brand fw-bolder text-light" to="/"> {webData.website_short_name} </Link>
+    <header className="wrap-1">
+        <nav className="navbar navbar-expand-lg navbar-light container" >
+        <Link className="navbar-brand fw-bolder text-light" to="/"> {/* {webData.website_short_name} */} <img className="img-logo" src="../img/ctskola-0.png" alt="" /> </Link>
           {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> */}
