@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { BsArrowUpShort } from 'react-icons/all'
 import { BsArrowDownShort } from 'react-icons/all'
-import {FcSalesPerformance,BiGitCompare,HiCubeTransparent} from 'react-icons/all'
+import { FcSalesPerformance, BiGitCompare, HiCubeTransparent } from 'react-icons/all'
 import Card from './Card';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -38,60 +38,60 @@ export default function MarketTrend() {
   })
   return (
     <>
-      <div className="wrap-4"  style={{background: "#141A28"}}>
-      <div className="container text-light py-5" /* style={{ background: "#141A28" }} */>
-        <h2 className="text-center py-4">Market Trend</h2>
-        <div className="row d-flex justify-content-between" data-aos="fade-up">
-          <div className="col-lg-12 col-md-12 col-sm-12 table-responsive">
-            <table
-              className=" text-light table-sm"
-              style={{ width: "100%", margin: 'auto', borderRadius: "20px", background: "#1E2738" }}
-            >
-              <tbody>
-                <tr
-                  style={{
-                    fontSize: "13px",
-                    height: "80px",
-                    // lineHeight: "80px",
-                    borderBottom: "1px solid white",
+      <div className="wrap-4" style={{ background: "#141A28" }}>
+        <div className="container text-light py-5" /* style={{ background: "#141A28" }} */>
+          <h2 className="text-center py-4">Market Trend</h2>
+          <div className="row d-flex justify-content-between" data-aos="fade-up">
+            <div className="col-lg-12 col-md-12 col-sm-12 table-responsive">
+              <table
+                className=" text-light table-sm"
+                style={{ width: "100%", margin: 'auto', borderRadius: "20px", background: "#1E2738" }}
+              >
+                <tbody>
+                  <tr
+                    style={{
+                      fontSize: "13px",
+                      height: "80px",
+                      // lineHeight: "80px",
+                      borderBottom: "1px solid white",
 
-                  }}
-                >
-                  <td style={{ fontSize: "20px", fontWeight: "600", paddingLeft: "20px" }}>Name</td>
-                  <td style={{ fontSize: "20px", fontWeight: "600" }}> Last Price</td>
-                  <td style={{ fontSize: "20px", fontWeight: "600" }}>24h Change</td>
-                </tr >
-                {market_child}
-              </tbody>
-            </table>
+                    }}
+                  >
+                    <td style={{ fontSize: "20px", fontWeight: "600", paddingLeft: "20px" }}>Name</td>
+                    <td style={{ fontSize: "20px", fontWeight: "600" }}> Last Price</td>
+                    <td style={{ fontSize: "20px", fontWeight: "600" }}>24h Change</td>
+                  </tr >
+                  {market_child}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
+
+      <div className="container-fluid py-5" style={{ background: "#141A28" }}>
+        <div className="container mx-auto">
+          <h2 className="text-center py-4">Ctskola Key Features</h2>
+          <div className="row d-flex align-center justify-content-center">
+            <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center" data-aos="zoom-in-up">
+              <Card title="Real-Time Price"
+                content="Find the crypto data you need  whether you’re looking to trade on a new to the exchange, invest in a fresh currency."
+                comp={<FcSalesPerformance style={{ fontSize: "3rem", color: "#CB9615" }} className="m-3" />} />
+            </div>
+            <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center" data-aos="zoom-in-up">
+              <Card title="Comparisons"
+                content="Find the crypto data you need  whether you’re looking to trade on a new to the exchange, invest in a fresh currency."
+                comp={<BiGitCompare style={{ fontSize: "3rem", color: "#CB9615" }} className="m-3" />} />
+            </div>
+            <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center" data-aos="zoom-in-up">
+              <Card title="Transparent"
+                content="Find the crypto data you need  whether you’re looking to trade on a new to the exchange, invest in a fresh currency."
+                comp={<HiCubeTransparent style={{ fontSize: "3rem", color: "#CB9615" }} className="m-3" />} />
+            </div>
+          </div>
+        </div>
       </div>
-     
-            <div className="container-fluid py-5" style={{ background: "#141A28" }}>
-            <div className="container mx-auto">
-              <h2 className="text-center py-4">Ctskola Key Features</h2>
-              <div className="row d-flex align-center justify-content-center">
-                <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center" data-aos="zoom-in-up">
-                <Card title="Real-Time Price"
-            content="Find the crypto data you need  whether you’re looking to trade on a new to the exchange, invest in a fresh currency."
-              comp= {<FcSalesPerformance style={{fontSize: "3rem",color:"#CB9615"}} className="m-3"/>}/>
-                </div>
-                <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center" data-aos="zoom-in-up">
-                <Card title="Comparisons"
-            content="Find the crypto data you need  whether you’re looking to trade on a new to the exchange, invest in a fresh currency."
-            comp= {<BiGitCompare style={{fontSize: "3rem",color:"#CB9615"}} className="m-3"/>}/>
-                </div>
-                <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center" data-aos="zoom-in-up">
-                <Card title="Transparent"
-            content="Find the crypto data you need  whether you’re looking to trade on a new to the exchange, invest in a fresh currency."
-            comp= {<HiCubeTransparent style={{fontSize: "3rem",color:"#CB9615"}} className="m-3"/>}/> 
-                </div>
-              </div>
-            </div>
-            </div>
-      
+
     </>
   );
 }

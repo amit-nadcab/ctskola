@@ -1,6 +1,6 @@
 .wrap-1 {
   /*  background-color: rgba(0,0,0,0.7); */
-  background-color: #141A28;
+  background-color: #141a28;
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -8,9 +8,9 @@
   height: 10vh !important;
   display: flex;
 }
-.navbar-brand{
+.navbar-brand {
   background-color: #04da9a;
-  padding:5px 5px;
+  padding: 5px 5px;
   border-radius: 5px;
 }
 .sign {
@@ -111,25 +111,54 @@
   margin-top: 20px;
   cursor: pointer;
 }
-.footer-logo:hover{
-  opacity:0.9;
+.footer-logo:hover {
+  opacity: 0.9;
 }
-.social-link:hover{
+.social-link:hover {
   opacity: 0.7;
 }
-@media (max-width: 460px){
-  .trading-container{
+
+.wrap-about {
+  height: 100vh;
+  background-color: #141a28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-top {
+  color: #09be8b;
+  font-size: 20px;
+}
+.about-head {
+  font-size: 50px;
+  font-weight: 400;
+}
+.about-paraOne {
+  font-size: 18px;
+  text-align: justify;
+}
+.about-paraTwo{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* -------------------460-------------- */
+@media (max-width: 460px) {
+  .trading-container {
     display: flex;
     flex-direction: column;
     padding: 50px;
   }
-  .tradingBtn{
+  .tradingBtn {
     margin: 10px 0;
   }
 }
+
+/* -------------------600-------------- */
 @media (max-width: 600px) {
   .gifimg {
     width: 100%;
+    /* background-color: ; */
   }
   .bannertxt {
     white-space: normal !important;
@@ -160,7 +189,7 @@
   }
   .img-1 {
     left: 13px !important;
-    top:-25px;
+    top: -25px;
     width: 100px !important;
   }
   .img-2 {
@@ -168,14 +197,11 @@
     width: 150px !important;
   }
   .img-3 {
-    
     width: 150px !important;
     right: 24px !important;
-   
   }
 }
-
-
+/* -------------------768-------------- */
 
 @media (max-width: 768px) {
   .bannerLeft {
@@ -191,13 +217,13 @@
   .img-1 {
     display: block !important;
     width: 200px !important;
-    height:100px;
+    height: 100px;
     bottom: 300px;
     left: -25px;
   }
   .img-2 {
     display: block !important;
-    height:100px;
+    height: 100px;
     top: 300px;
     left: -25px;
     width: 200px;
@@ -205,11 +231,18 @@
   .img-3 {
     display: block !important;
     width: 200px;
-    height:150px;
+    height: 150px;
     top: 100px;
     right: -20px;
   }
+  .about-img {
+    margin-top: 50px;
+  }
+  .about-top {
+    padding: 30px 0 0 0;
+  }
 }
+/* -------------------992-------------- */
 @media (max-width: 992px) {
   .bannertxt {
     font-size: 30px;

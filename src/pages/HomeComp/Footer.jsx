@@ -68,7 +68,7 @@ export default function Footer() {
           <div className="col-lg-3 col-md-6 col-sm-12 my-3 text-center">
             <h5 style={{color: "#CDCFD4",fontWeight:"600"}}>About Us</h5>
             <p>
-              <a style={{ fontWeight: "400" , color: "#CDCFD4" }}>
+              <a style={{ fontWeight: "400" , color: "#CDCFD4" }} href="/about">
                 About
               </a>
             </p>
